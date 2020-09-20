@@ -51,17 +51,31 @@ into the {body} of the default.hbs template --}}
             </a>
             {{/foreach}}
         </div>
-
     </footer>
-
-    {{!--
     <section class="post-full-comments">
-        If you want to embed comments, this is a good place to do it!
+        <div id='discourse-comments'></div>
     </section>
-    --}}
-
 </section>
 {{/post}}
+
+{{^is "preview"}}
+<script type="text/javascript">
+    if (window.location.pathname.indexOf('/p/') < 0) {
+        DiscourseEmbed = {
+            discourseUrl: 'https://discourse.indicproject.org/',
+            discourseEmbedUrl: '{{url absolute="true"}}'
+        };
+
+        (function () {
+            var d = document.createElement('script');
+            d.type = 'text/javascript';
+            d.async = true;
+            d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+        })();
+    }
+</script>
+{{/is}}
 
 <script>
     var images = document.querySelectorAll('.kg-gallery-image img');
