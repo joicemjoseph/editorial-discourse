@@ -1,8 +1,8 @@
 {
-    "name": "editorial",
+    "name": "editorial-smc",
     "description": "This is Editorial, a news-oriented theme for Ghost.",
     "demo": "https://editorial.ghost.io",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -39,14 +39,19 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Editorial.git"
+        "url": "https://github.com/joicemjoseph/editorial-discourse.git"
     },
-    "bugs": "https://github.com/TryGhost/Editorial/issues",
+    "bugs": "https://github.com/joicemjoseph/editorial-discourse/issues",
     "contributors": [
         {
             "name": "ajlkn",
             "email": "aj@lkn.io",
             "url": "https://twitter.com/ajlkn"
+        },
+        {
+            "name": "Joice",
+            "email": "joice@moolekkari.net",
+            "url": "https://joice.moolekkari.net"
         }
     ],
     "devDependencies": {
