@@ -1,6 +1,6 @@
 {
     "name": "editorial-smc",
-    "description": "This is Editorial, a news-oriented theme for Ghost.",
+    "description": "This is Editorial, a news-oriented theme for Ghost, tailored for blog.smc.org.in.",
     "demo": "https://editorial.ghost.io",
     "version": "2.0.1",
     "engines": {
